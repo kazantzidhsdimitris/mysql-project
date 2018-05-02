@@ -47,7 +47,7 @@ LIMIT 1;
 SELECT ROUND((SELECT COUNT(*) FROM photos) / (SELECT COUNT(*) FROM users),2) AS 'avg photos/users' ;
 
 
--- What are the TOP 5 hashtags
+-- What are the TOP 6 hashtags
 
 SELECT tag_name,COUNT(*) AS 'Commonly used hashtags' FROM tags
 INNER JOIN photo_tags
