@@ -56,7 +56,7 @@ GROUP BY tags.id
 ORDER BY COUNT(*) DESC
 LIMIT 6;
 
--- Find users who have liked every single photo
+-- Find users who have liked every single photo(bot accounts)
 
 SELECT username, COUNT(*) AS 'Likes' FROM users
 JOIN likes
